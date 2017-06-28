@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+main {
+	width: 600px;
+	height: auto;
+	background-color: beige;
+	margin: 25px auto;
+	padding-bottom: 10px;
+}
+a {
+	cursor: pointer;
+}
+header {
+	width: 100%;
+	height: 110px;
+}
+.nav {
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.nav_name {
+	width: 33%;
+	height: 50px;
+	background-color: cadetblue;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+/* ----- pointer box drawn start ----- */
+#arrow-list, #arrow-online, #arrow-offline {
+	width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid cadetblue;
+}
+/* ----- pointer box drawn end ----- */
+
+.search_box {
+	height: 50px;
+	width: 100%;
+}
+input {
+	width: 30%;
+	height: 36px;
+	margin: 7px;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+	-webkit-box-shadow: 1px 1px 15px #cccaca;
+	box-shadow: 1px 1px 15px #cccaca;
+}
+input:focus {
+	width: 60%;
+	margin: 7px 2%;
+}
+::-webkit-input-placeholder {
+	color: darkgray;
+	font-size: 12px;
+	padding: 10px;
+}
+:-ms-input-placeholder {
+	color: darkgray;
+	font-size: 12px;
+	padding: 10px;
+}
+::placeholder {
+	color: darkgray;
+	font-size: 12px;
+	padding: 10px;
+}
+hr {
+	margin: 10px;
+	color: darkgray;
+}
+section {
+	width: 90%;
+	height: auto;
+	padding: 0 10px;
+	background-color: azure;
+	margin: 27px auto;
+	border: 1px solid darkgray;
+	-webkit-box-shadow: 1px 1px 15px #cccaca;
+	box-shadow: 1px 1px 15px #cccaca;
+}
+#stream {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	margin: 10px auto;
+	padding: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: flex-start;
+	border: 1px solid darkgray;
+}
+#avatar {
+	width: 80px;
+	height: auto;
+	float: left;
+	border: 1px solid darkgray;
+/*	background-image: url ('https://www.sap.com/dam/application/shared/icons/dev-mobile-offline.svg');*/
+}
+#name_link {
+	width: auto;
+	height: auto;
+	margin-left: 20px;
+	margin-right: 10px;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	padding-left: 10px;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+h3 {
+	width: auto;
+	text-align: center;
+}
+p {
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+}
+
+@media screen and (max-width: 660px) {
+	main {
+		width: 90%;
+		font-size: 0.8rem;
+	}
+}
